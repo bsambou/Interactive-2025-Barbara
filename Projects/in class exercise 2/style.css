@@ -5,3 +5,8 @@ background-color: red;
 border-radius: 100%;
 transition: background-color 3s ease-in-out 1s, border-radius 3s ease 0s;
 }
+
+.circle:active{
+background-color: blue;
+border-radius: 0%;
+}
