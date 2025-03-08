@@ -1,0 +1,19 @@
+@page{
+	size: letter;
+	margin: 1cm;
+}
+
+@media print and (orientation: portrait){
+	body{
+		font-size: 20px;
+		background-color: lightyellow;
+		-webkit-print-color-adjust: exact;  /*Firefox*/
+		print-color-adjust: exact;
+	}
+
+	h1{
+		font-family: sans-serif;
+		font-size: 12em;
+		page-break-after: always;
+	}
+}
