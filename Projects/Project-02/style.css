@@ -17,3 +17,21 @@
 		page-break-after: always;
 	}
 }
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
