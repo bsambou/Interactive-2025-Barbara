@@ -13,7 +13,9 @@
 
 <button onclick="document.location='index-1.html'">Look Shallow</button>
 
-a { padding-bottom: 100%; }
+<div id="top">TOP</div> <div id="bottom">BOTTOM</div>
+#top, #bottom { position:fixed; top:0; left:0 }
+#top { z-index:9; } #bottom { z-index:8; }
 
 </html>
 
