@@ -32,7 +32,7 @@ display: flex;
 .container-2{
 	position: fixed;
 	left: 500px;
-	top: 200px;
+	top: 300px;
 	bottom: 900px;
 	background-color: rgba(0, 0, 0, .5);
 }
@@ -40,10 +40,27 @@ display: flex;
 .container-3{
 	position: fixed;
 	left: 500px;
-	top: 300px;
+	top: 400px;
 	bottom: 900px;
 	background-color: rgba(0, 0, 0, .5);
 }
+
+.container-4{
+	position: fixed;
+	left: 500px;
+	top: 500px;
+	bottom: 900px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.container-5{
+	position: fixed;
+	left: 500px;
+	top: 600px;
+	bottom: 900px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
 
 
 body{
