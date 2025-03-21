@@ -10,11 +10,12 @@ a{
 	font-family: sans-serif;
 }
 
-container_for_links a {
-	display: block;
-}
-
 .parent {
 	dispay: flex;
 	flex-direction: column;
+}
+
+.header-nav-inner
+flex-direction: column;
+display: flex;
 }
