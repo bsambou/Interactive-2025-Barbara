@@ -18,3 +18,10 @@ a {
 	dispay: flex;
 	flex-direction: column;
 }
+
+.container
+	position: fixed;
+	left: 500px;
+	top: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
