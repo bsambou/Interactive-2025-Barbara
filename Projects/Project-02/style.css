@@ -15,6 +15,7 @@ a{
 	flex-direction: column;
 }
 
+/* stack left navigation*/
 .header-nav-inner
 flex-direction: column;
 display: flex;
