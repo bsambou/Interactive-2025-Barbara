@@ -24,7 +24,7 @@ display: flex;
 .container-1{
 	position: fixed;
 	left: 500px;
-	top: 250px;
+	top: 7500px;
 	bottom: 900px;
 	background-color: rgba(0, 0, 0, .5);
 }
