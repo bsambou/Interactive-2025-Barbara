@@ -46,6 +46,41 @@ display: flex;
 }
 
 
+body{
+	width: 100vw;
+	height: 100vh;
+
+}
+
+h1{
+	text-align: center;
+}
+
+
+.container{
+	width: 90%
+	height: 30%
+	text-align: center;
+	background-color: lightcyan;
+	margin-right: auto
+	margin-lieft: auto
+	padding: 10px 50px 10px 50px;
+}
+
+.rectangle{
+	width: 250px;
+	height: 250px;
+	background-color: darkgray;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.small-container{
+	width: 40%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 @page{
 	size: letter;
 	margin: 1cm;
