@@ -13,3 +13,8 @@ a{
 a {
 	display: block;
 }
+
+.parent {
+	dispay: flex;
+	flex-direction: column;
+}
