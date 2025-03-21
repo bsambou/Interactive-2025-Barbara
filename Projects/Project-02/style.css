@@ -1,7 +1,7 @@
 .container{
 	position: fixed;
 	left: 500px;
-	top: 200px;
+	top: 500px;
 	background-color: rgba(0, 0, 0, .5);
 }
 
@@ -17,11 +17,4 @@ a {
 .parent {
 	dispay: flex;
 	flex-direction: column;
-}
-
-.container
-	position: fixed;
-	left: 500px;
-	top: 200px;
-	background-color: rgba(0, 0, 0, .5);
 }
