@@ -1,9 +1,4 @@
-.container{
-	position: fixed;
-	left: 500px;
-	top: 700px;
-	bottom: 900px;
-	background-color: rgba(0, 0, 0, .5);
+
 }
 
 a{
@@ -20,6 +15,7 @@ a{
 flex-direction: column;
 display: flex;
 }
+
 
 .container-1{
 	position: fixed;
@@ -61,6 +57,12 @@ display: flex;
 	background-color: rgba(0, 0, 0, .5);
 }
 
+.container-6{
+	position: fixed;
+	left: 500px;
+	top: 700px;
+	bottom: 900px;
+	background-color: rgba(0, 0, 0, .5);
 
 
 body{
