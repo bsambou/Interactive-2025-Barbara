@@ -29,3 +29,21 @@ body {
 	top: 100px;
 	left: 200px;
 }
+
+
+
+
+#trapezoid {<br />
+      border-bottom: 100px solid red;<br />
+      border-left: 25px solid transparent;<br />
+      border-right: 25px solid transparent;<br />
+      height: 0;<br />
+      width: 100px;<br />
+    }<br />
+    #trapezoid {<br />
+      border-bottom: 100px solid red;<br />
+      border-left: 25px solid transparent;<br />
+      border-right: 25px solid transparent;<br />
+      height: 0;<br />
+      width: 100px;<br />
+    }<br />
