@@ -36,3 +36,11 @@ display: flex;
 	bottom: 900px;
 	background-color: rgba(0, 0, 0, .5);
 }
+
+.container-3{
+	position: fixed;
+	left: 500px;
+	top: 300px;
+	bottom: 900px;
+	background-color: rgba(0, 0, 0, .5);
+}
