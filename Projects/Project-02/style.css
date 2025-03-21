@@ -1,8 +1,8 @@
 .container{
 	position: fixed;
 	left: 500px;
-	top: 200px;
-	bottom: 2000px;
+	top: 100px;
+	bottom: 900px;
 	background-color: rgba(0, 0, 0, .5);
 }
 
@@ -16,7 +16,6 @@ a{
 	flex-direction: column;
 }
 
-/* stack left navigation*/
 .header-nav-inner
 flex-direction: column;
 display: flex;
