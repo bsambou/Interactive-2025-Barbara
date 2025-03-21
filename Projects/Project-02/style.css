@@ -16,6 +16,13 @@ flex-direction: column;
 display: flex;
 }
 
+.container-0{
+	position: fixed;
+	left: 500px;
+	top: 200px;
+	bottom: 900px;
+	background-color: rgba(0, 0, 0, .5);
+}
 
 .container-1{
 	position: fixed;
