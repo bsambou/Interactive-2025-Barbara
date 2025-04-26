@@ -14,11 +14,6 @@
 
     <div class="canvas">
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
   <title>CSS Animation Scene</title>
   <style>
     body {
@@ -29,6 +24,7 @@
       align-items: center;
       height: 100vh;
       font-family: sans-serif;
+      overflow: hidden;
     }
 
     .container {
@@ -166,6 +162,7 @@
       top: 40px;
       left: 40px;
       background: white;
+      transition: transform 0.3s ease;
     }
 
     .man .arm {
@@ -199,10 +196,44 @@
       transform: rotate(5deg);
     }
 
+    /* Rain Styles */
+    .rain {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    .raindrop {
+      position: absolute;
+      top: -20px;
+      width: 5px;
+      height: 15px;
+      background: #00aaff;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      opacity: 0.7;
+      filter: blur(0.5px);
+      animation: fall 2s linear infinite;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 <body>
 
+  <!-- Rain overlay -->
+  <div class="rain"></div>
+
+  <!-- Main Scene -->
   <div class="container">
     
     <!-- Cat and Smoke -->
@@ -238,7 +269,20 @@
 
   </div>
 
-<div class="rain"></div>
+  <!-- Raindrop generator -->
+  <script>
+    const rainContainer = document.querySelector('.rain');
+
+    for (let i = 0; i < 50; i++) {
+      const drop = document.createElement('div');
+      drop.classList.add('raindrop');
+      drop.style.left = Math.random() * 100 + 'vw';
+      drop.style.animationDelay = Math.random() * 2 + 's';
+      drop.style.animationDuration = 1.5 + Math.random() * 1 + 's';
+      rainContainer.appendChild(drop);
+    }
+  </script>
+
 
         <!-- put your still life here -->
         <div class="square"> </div>
