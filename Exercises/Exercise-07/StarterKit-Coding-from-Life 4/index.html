@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CSS Still Life 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+
+</head>
+
+<body>
+
+    <div class="canvas">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animation Scene</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 40px;
+    }
+
+    /* Left: Cat with Smoke */
+    .cat {
+      position: relative;
+      width: 150px;
+      height: 200px;
+    }
+
+    .cat .body {
+      width: 80px;
+      height: 100px;
+      background: grey;
+      position: absolute;
+      bottom: 0;
+      left: 35px;
+      border-radius: 20px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .cat:hover .body {
+      transform: scale(1.05);
+    }
+
+    .cat .head {
+      width: 60px;
+      height: 60px;
+      background: grey;
+      position: absolute;
+      top: 10px;
+      left: 45px;
+      border-radius: 50%;
+      box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+    }
+
+    .cat .ear {
+      width: 20px;
+      height: 20px;
+      background: grey;
+      position: absolute;
+      top: 0;
+      border-radius: 20% 20% 0 0;
+      transform: rotate(45deg);
+    }
+
+    .ear.left {
+      left: 40px;
+    }
+
+    .ear.right {
+      left: 80px;
+    }
+
+    .smoke {
+      position: absolute;
+      left: -20px;
+      top: -30px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .smoke div {
+      width: 15px;
+      height: 15px;
+      background: #ccc;
+      border-radius: 50%;
+      opacity: 0.4;
+      filter: blur(3px);
+      animation: smokeMove 3s infinite;
+    }
+
+    @keyframes smokeMove {
+      0% { transform: translateY(0) scale(1); opacity: 0.5; }
+      100% { transform: translateY(-50px) scale(1.5); opacity: 0; }
+    }
+
+    /* Center: Bubble Cluster */
+    .bubble-cluster {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+
+    .bubble {
+      position: absolute;
+      background: lightblue;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,255,0.2);
+      transition: all 0.4s ease;
+    }
+
+    .bubble-cluster:hover .bubble {
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+
+    .bubble1 { width: 50px; height: 50px; top: 50px; left: 70px; }
+    .bubble2 { width: 40px; height: 40px; top: 20px; left: 100px; }
+    .bubble3 { width: 30px; height: 30px; top: 90px; left: 110px; }
+    .bubble4 { width: 45px; height: 45px; top: 80px; left: 60px; }
+    .bubble5 { width: 35px; height: 35px; top: 40px; left: 50px; }
+
+    /* Right: Man Outline */
+    .man {
+      position: relative;
+      width: 100px;
+      height: 200px;
+    }
+
+    .man .head {
+      width: 40px;
+      height: 40px;
+      border: 2px solid black;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 30px;
+      background: white;
+    }
+
+    .man .body {
+      width: 20px;
+      height: 80px;
+      border: 2px solid black;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      background: white;
+    }
+
+    .man .arm {
+      width: 60px;
+      height: 20px;
+      border: 2px solid black;
+      position: absolute;
+      top: 60px;
+      left: 20px;
+      background: white;
+    }
+
+    .man .leg {
+      width: 20px;
+      height: 50px;
+      border: 2px solid black;
+      position: absolute;
+      top: 120px;
+      background: white;
+    }
+
+    .leg.left {
+      left: 30px;
+    }
+
+    .leg.right {
+      left: 50px;
+    }
+
+    .man:hover .body {
+      transform: rotate(5deg);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Cat and Smoke -->
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head"></div>
+      <div class="ear left ear"></div>
+      <div class="ear right ear"></div>
+      <div class="smoke">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Bubble Cluster -->
+    <div class="bubble-cluster">
+      <div class="bubble bubble1"></div>
+      <div class="bubble bubble2"></div>
+      <div class="bubble bubble3"></div>
+      <div class="bubble bubble4"></div>
+      <div class="bubble bubble5"></div>
+    </div>
+
+    <!-- Man Outline -->
+    <div class="man">
+      <div class="head"></div>
+      <div class="body"></div>
+      <div class="arm"></div>
+      <div class="leg left"></div>
+      <div class="leg right"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+        <!-- put your still life here -->
+        <div class="square"> </div>
+
+    </div>
+
+</body>
+
+</html>
