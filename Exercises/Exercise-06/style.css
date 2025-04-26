@@ -1,34 +1,45 @@
-/* Set up full page background */
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #222, #444);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-/* Container to position the image */
-.image-container {
-    position: relative;
+.animation-wrapper {
+  width: 300px;
+  height: 300px;
+  position: relative;
 }
 
-/* Style the image */
-.animated-image {
-    width: 300px;  /* Adjust the image size */
-    height: auto;
-    animation: moveImage 5s infinite alternate;  /* Apply animation */
+.animated-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(0.5) translate(0, 0);
+  animation: animateImage 5s ease-in-out infinite alternate;
 }
 
-/* Animation keyframes */
-@keyframes moveImage {
-    0% {
-        transform: translateX(0);  /* Start at original position */
-    }
-    50% {
-        transform: translateX(300px);  /* Move 300px to the right */
-    }
-    100% {
-        transform: translateX(0);  /* Return to the starting position */
-    }
+@keyframes animateImage {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translate(0, 0);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1) translate(30px, -30px);
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1) translate(0px, 30px);
+    filter: hue-rotate(360deg);
+  }
 }
