@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  border: 2px solid black;
+  border-top: none;
+}
+
+.day {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: calc(100% / 7);
+  min-height: 80px;
+  padding: 5px;
+  position: relative;
+  text-align: left;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-top: 2px solid black;
+}
+
+.muted {
+  color: #aaa;
+  background-color: #f8f8f8;
+}
+
+.moon {
+  font-size: 1.2em;
+  float: right;
+}
+
+
+/* Moon animation */
+.moon {
+  animation: pulse 3s infinite ease-in-out;
+  display: inline-block;
+  transform-origin: center;
+}
+
+/* Define keyframes for pulsing effect */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
