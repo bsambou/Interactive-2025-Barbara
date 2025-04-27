@@ -14,41 +14,46 @@ h1 {
   color: black;
 }
 
-/* Calendar container styles */
+/* Flexbox calendar container styles */
 .calendar {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
-  grid-gap: 2px;
-  max-width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 700px;
   margin: 20px auto;
   border: 2px solid black;
   background-color: white;
 }
 
-/* Header styles (Day names: Sun, Mon, etc.) */
+/* Day header styles (Sunday - Saturday) */
 .day.header {
+  width: 100px;
+  height: 100px;
   background-color: black;
   color: white;
   font-weight: bold;
-  padding: 15px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 18px;
 }
 
 /* Blank days to adjust the first date position */
 .day.blank {
+  width: 100px;
+  height: 100px;
   background-color: #f4f4f4;
+  border: 1px solid black;
 }
 
-/* Date cell styles */
+/* Day styles (Dates) */
 .day {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  border: 1px solid black;
-  padding: 20px;
-  height: 70px;
 }
 
 /* Date number styles */
@@ -56,6 +61,4 @@ h1 {
   font-size: 20px;
   font-weight: bold;
   color: black;
-  text-align: center;
 }
-
