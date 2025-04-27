@@ -1,6 +1,6 @@
 
 .medium-image {
-  width: 300px;     /* or try 50% for relative sizing */
+  width: 100px;     /* or try 50% for relative sizing */
   height: auto;     /* maintains aspect ratio */
   display: block;   /* helps with alignment */
   margin: 20px auto; /* centers image horizontally */
