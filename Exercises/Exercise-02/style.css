@@ -9,7 +9,7 @@ body {
 
 /* Scale down the image */
 .full-page-img {
-  width: 60%;
+  width: 30%;
   height: auto;
   max-width: 800px;
   border-radius: 10px; /* optional styling */
