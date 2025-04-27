@@ -34,11 +34,6 @@ p {
   line-height: 1.6;
 }
 
-.spacing {
-  margin-bottom: 2px;
-}
-
-
 /* Image grid with buttons */
 .image-grid {
   display: grid;
