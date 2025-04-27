@@ -1,56 +1,57 @@
-/* Reset & Base */
+/* Base Styles */
 body {
   margin: 0;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   overflow-x: hidden;
 }
 
-/* Animated Sun */
-.sun {
+/* Sun Outline */
+.sun-outline {
   position: absolute;
   top: 30px;
   left: 30px;
   width: 60px;
   height: 60px;
-  background: #fff;
+  border: 2px solid #000;
   border-radius: 50%;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-  animation: subtle-pulse 6s ease-in-out infinite;
+  animation: pulse-outline 6s ease-in-out infinite;
 }
 
-/* Animated Cloud */
-.cloud {
+/* Cloud Outline */
+.cloud-outline {
   position: absolute;
   bottom: 30px;
   right: 30px;
-  width: 80px;
+  width: 100px;
   height: 50px;
-  background: #666;
-  border-radius: 40px;
-  box-shadow: 30px 0 #666, 15px 10px #666;
-  animation: drift 12s ease-in-out infinite alternate;
+  border: 2px solid #aaa;
+  border-radius: 50px;
+  box-shadow:
+    30px 0 0 0 rgba(170,170,170,0.8),
+    15px 10px 0 0 rgba(170,170,170,0.8);
+  animation: float-outline 8s ease-in-out infinite alternate;
 }
 
-/* Keyframes */
-@keyframes subtle-pulse {
+/* Animations */
+@keyframes pulse-outline {
   0%, 100% {
     transform: scale(1);
-    opacity: 0.9;
+    opacity: 1;
   }
   50% {
     transform: scale(1.05);
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 
-@keyframes drift {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-10px); }
+@keyframes float-outline {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-6px); }
 }
 
-/* Layout */
+/* Layout Container */
 .container {
   display: flex;
   flex-direction: column;
@@ -68,11 +69,12 @@ h1 {
 
 p {
   font-size: 1.1em;
-  color: #ccc;
+  color: #333;
   max-width: 600px;
   margin-bottom: 50px;
 }
 
+/* Image Grid */
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
