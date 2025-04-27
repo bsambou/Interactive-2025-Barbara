@@ -27,6 +27,14 @@ p {
   margin-bottom: 40px;
 }
 
+.narrow-paragraph {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
 /* Image grid with buttons */
 .image-grid {
   display: grid;
