@@ -1,44 +1,56 @@
+/* Reset & Base */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #e0f7fa;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
   overflow-x: hidden;
 }
 
+/* Animated Sun */
 .sun {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 80px;
-  height: 80px;
-  background: yellow;
-  border-radius: 50%;
-  box-shadow: 0 0 30px rgba(255, 255, 0, 0.8);
-  animation: spin 10s linear infinite;
-}
-
-.cloud {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  width: 100px;
+  top: 30px;
+  left: 30px;
+  width: 60px;
   height: 60px;
   background: #fff;
-  border-radius: 50px;
-  box-shadow: 40px 0 #fff, 20px 10px #fff;
-  animation: float 6s ease-in-out infinite;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  animation: subtle-pulse 6s ease-in-out infinite;
 }
 
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* Animated Cloud */
+.cloud {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 80px;
+  height: 50px;
+  background: #666;
+  border-radius: 40px;
+  box-shadow: 30px 0 #666, 15px 10px #666;
+  animation: drift 12s ease-in-out infinite alternate;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+/* Keyframes */
+@keyframes subtle-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
 }
 
+@keyframes drift {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-10px); }
+}
+
+/* Layout */
 .container {
   display: flex;
   flex-direction: column;
@@ -49,14 +61,16 @@ body {
 }
 
 h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-bottom: 15px;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  color: #ccc;
   max-width: 600px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .image-grid {
@@ -70,10 +84,12 @@ p {
 .image-grid a img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .image-grid a img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  filter: grayscale(0%);
 }
