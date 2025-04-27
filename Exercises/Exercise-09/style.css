@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,22 +11,23 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #000;
+    color: #fff;
 }
 
 .calendar {
     display: flex;
     flex-direction: column;
     width: 300px;
-    border: 2px solid #ccc;
+    border: 2px solid #fff;
     border-radius: 8px;
-    background-color: white;
+    background-color: #111;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: #f2f2f2;
+    background-color: #222;
     padding: 10px;
     font-weight: bold;
     text-align: center;
@@ -33,21 +35,23 @@ body {
 
 .day {
     flex: 1;
-    padding: 5px;
+    padding: 10px;
 }
 
 .body {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    background-color: #111;
 }
 
 .cell {
     width: calc(100% / 7);
-    padding: 15px;
+    padding: 20px;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     box-sizing: border-box;
+    position: relative;
 }
 
 .cell:nth-child(7n) {
@@ -56,4 +60,42 @@ body {
 
 .cell:nth-last-child(-n+7) {
     border-bottom: none;
+}
+
+.cell[data-moon]::after {
+    content: attr(data-moon);
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moonCycle 29.5s infinite;
+}
+
+/* Moon Phases - Represented with Unicode or CSS Symbols */
+@keyframes moonCycle {
+    0%, 100% {
+        content: '🌑'; /* New Moon */
+    }
+    5% {
+        content: '🌒'; /* Waxing Crescent */
+    }
+    10% {
+        content: '🌓'; /* First Quarter */
+    }
+    15% {
+        content: '🌔'; /* Waxing Gibbous */
+    }
+    20% {
+        content: '🌕'; /* Full Moon */
+    }
+    25% {
+        content: '🌖'; /* Waning Gibbous */
+    }
+    30% {
+        content: '🌗'; /* Last Quarter */
+    }
+    35% {
+        content: '🌘'; /* Waning Crescent */
+    }
 }
