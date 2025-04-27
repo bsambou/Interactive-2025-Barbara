@@ -1,23 +1,7 @@
-body {
-  margin: 0;
-  height: 50vh;
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
-  overflow: hidden;
-  padding: 2rem; /* adds space around the image */
-  box-sizing: border-box;
-}
 
-.full-page-img {
-  max-width: 50%;
-  max-height: 50%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  border: 8px solid #ccc; /* frame border */
-  border-radius: 12px;     /* optional rounded corners */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* soft shadow */
+.medium-image {
+  width: 300px;     /* or try 50% for relative sizing */
+  height: auto;     /* maintains aspect ratio */
+  display: block;   /* helps with alignment */
+  margin: 20px auto; /* centers image horizontally */
 }
