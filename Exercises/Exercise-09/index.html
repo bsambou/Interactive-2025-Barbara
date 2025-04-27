@@ -3,64 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>April 2025 Calendar - Geometric Flexbox</title>
+  <title>Online Calendar</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <h1>April 2025 Calendar</h1>
-
-  <div class="calendar">
-    <!-- Weekday Headers -->
-    <div class="day header">Sun</div>
-    <div class="day header">Mon</div>
-    <div class="day header">Tue</div>
-    <div class="day header">Wed</div>
-    <div class="day header">Thu</div>
-    <div class="day header">Fri</div>
-    <div class="day header">Sat</div>
-
-    <!-- Blank days before the 1st of April (Assuming it starts on a Tuesday) -->
-    <div class="day blank"></div> <!-- Blank for Sun -->
-    <div class="day blank"></div> <!-- Blank for Mon -->
-
-    <!-- April 2025 Dates -->
-    <div class="day"><div class="shape circle">1</div></div>
-    <div class="day"><div class="shape square">2</div></div>
-    <div class="day"><div class="shape circle">3</div></div>
-    <div class="day"><div class="shape square">4</div></div>
-    <div class="day"><div class="shape circle">5</div></div>
-
-    <div class="day"><div class="shape square">6</div></div>
-    <div class="day"><div class="shape circle">7</div></div>
-    <div class="day"><div class="shape square">8</div></div>
-    <div class="day"><div class="shape circle">9</div></div>
-    <div class="day"><div class="shape square">10</div></div>
-    <div class="day"><div class="shape circle">11</div></div>
-    <div class="day"><div class="shape square">12</div></div>
-
-    <div class="day"><div class="shape circle">13</div></div>
-    <div class="day"><div class="shape square">14</div></div>
-    <div class="day"><div class="shape circle">15</div></div>
-    <div class="day"><div class="shape square">16</div></div>
-    <div class="day"><div class="shape circle">17</div></div>
-    <div class="day"><div class="shape square">18</div></div>
-    <div class="day"><div class="shape circle">19</div></div>
-
-    <div class="day"><div class="shape square">20</div></div>
-    <div class="day"><div class="shape circle">21</div></div>
-    <div class="day"><div class="shape square">22</div></div>
-    <div class="day"><div class="shape circle">23</div></div>
-    <div class="day"><div class="shape square">24</div></div>
-    <div class="day"><div class="shape circle">25</div></div>
-    <div class="day"><div class="shape square">26</div></div>
-
-    <div class="day"><div class="shape circle">27</div></div>
-    <div class="day"><div class="shape square">28</div></div>
-    <div class="day"><div class="shape circle">29</div></div>
-    <div class="day"><div class="shape square">30</div></div>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button class="prev" onclick="changeMonth(-1)">&#10094;</button>
+      <span id="month-year"></span>
+      <button class="next" onclick="changeMonth(1)">&#10095;</button>
+    </div>
+    <div class="calendar-grid">
+      <div class="weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+      <div id="days" class="days">
+        <!-- Days will be dynamically inserted here by JavaScript -->
+      </div>
+    </div>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
+
 
