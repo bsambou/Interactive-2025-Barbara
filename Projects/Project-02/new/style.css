@@ -137,20 +137,20 @@ p {
 .cloud1 {
   top: 100px;
   left: -150px;
-  animation-duration: 60s; /* Decreased the duration for faster speed */
+  animation-duration: 40s; /* Decreased the duration for faster speed */
 }
 
 .cloud2 {
   top: 180px;
   left: -300px;
-  animation-duration: 80s; /* Decreased the duration for faster speed */
+  animation-duration: 60s; /* Decreased the duration for faster speed */
   opacity: 0.45;
 }
 
 .cloud3 {
   top: 50px;
   left: -200px;
-  animation-duration: 70s; /* Decreased the duration for faster speed */
+  animation-duration: 50s; /* Decreased the duration for faster speed */
   opacity: 0.35;
 }
 
