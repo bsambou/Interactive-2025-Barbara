@@ -5,8 +5,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   background-color: #f0f0f0;
+  overflow: hidden;
+  padding: 2rem; /* adds space around the image */
+  box-sizing: border-box;
 }
 
 .full-page-img {
@@ -15,4 +17,7 @@ body {
   width: auto;
   height: auto;
   object-fit: contain;
+  border: 8px solid #ccc; /* frame border */
+  border-radius: 12px;     /* optional rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* soft shadow */
 }
