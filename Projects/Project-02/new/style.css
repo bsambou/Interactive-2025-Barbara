@@ -199,3 +199,20 @@ p {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-3px); }
 }
+
+@media print {
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        margin: 1in; /* Set margin for print */
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+
+    p {
+        margin-bottom: 1em;
+    }
+}
+
