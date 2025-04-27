@@ -1,13 +1,17 @@
-/* Remove default margin and make body full height */
 body {
   margin: 0;
   height: 100vh;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* optional background */
 }
 
-/* Make image fit the page */
+/* Scale down the image */
 .full-page-img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+  width: 60%;
+  height: auto;
+  max-width: 800px;
+  border-radius: 10px; /* optional styling */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* optional shadow */
 }
