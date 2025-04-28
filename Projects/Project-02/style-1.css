@@ -60,7 +60,7 @@ body {
 .right-section {
   display: flex;
   flex-direction: column; /* Align buttons vertically */
-  gap: 10px; /* Adds space between buttons */
+  gap: 20px; /* Adds space between buttons */
   align-items: flex-start; /* Align buttons to the left */
   padding-top: 40px; /* Align buttons with paragraph */
   flex-shrink: 0; /* Prevents the right section from shrinking */
