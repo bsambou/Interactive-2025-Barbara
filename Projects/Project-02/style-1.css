@@ -18,7 +18,7 @@ body {
   max-width: 1200px;
 }
 
-/* Left section: Title, Image, Music Player, Paragraph */
+/* Left section: Title, Image, Music Player, Paragraph, and Buttons */
 .left-section {
   flex: 1;
   margin-right: 20px;
@@ -53,16 +53,14 @@ body {
   margin-top: 20px;
   font-size: 18px;
   color: #555;
+  margin-bottom: 20px; /* Adds space between the paragraph and the buttons */
 }
 
-/* Right section: Button links aligned vertically */
-.right-section {
+/* Button links styling */
+.buttons {
   display: flex;
   flex-direction: column; /* Align buttons vertically */
-  justify-content: flex-start;
-  align-items: flex-start;
   gap: 10px; /* Adds space between buttons */
-  padding-top: 40px; /* Align buttons with paragraph */
 }
 
 .button {
@@ -79,4 +77,9 @@ body {
 
 .button:hover {
   background-color: #0056b3;
+}
+
+/* Right section: Empty or additional content */
+.right-section {
+  /* This can be left empty or used for other content */
 }
