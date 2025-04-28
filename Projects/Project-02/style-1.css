@@ -10,22 +10,27 @@ body {
 
 /* Container to center the content */
 .container {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between; /* Aligns left and right content */
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Left column: Title, Image, Music Player, Paragraph */
+.left-column {
+  flex: 1;
+  max-width: 800px;
   background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+  padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Title section */
+/* Title section aligned left */
 .title h1 {
   text-align: left;
   font-size: 36px;
   margin: 0 0 20px 0;
-  padding-left: 20px;
 }
 
 /* Image styling */
@@ -34,7 +39,7 @@ body {
   max-width: 400px;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 20px; /* Bottom margin to separate from music player */
 }
 
 /* Music player styling */
@@ -48,7 +53,6 @@ body {
   text-align: left;
   width: 100%;
   max-width: 800px;
-  padding-left: 20px;
 }
 
 /* Buttons section (vertical on the right) */
@@ -76,4 +80,3 @@ body {
 .button:hover {
   background-color: #0056b3;
 }
-
