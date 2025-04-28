@@ -3,43 +3,44 @@ body {
   font-family: Segoe UI, sans-serif;
   margin: 0;
   padding: 0;
-  background: url('your-background-image.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background-color: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
-/* Container to center the content */
+/* Main container to hold both sections */
 .container {
   display: flex;
-  justify-content: space-between; /* Aligns left and right content */
-  padding: 20px;
-  position: relative;
-  z-index: 1;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
 }
 
-/* Left column: Title, Image, Music Player, Paragraph */
-.left-column {
+/* Left section: Title, Image, Music Player, Paragraph */
+.left-section {
   flex: 1;
-  max-width: 800px;
-  background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+  margin-right: 20px;
+  background-color: #fff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Title section aligned left */
-.title h1 {
-  text-align: left;
+/* Title styling */
+.left-section h1 {
   font-size: 36px;
-  margin: 0 0 20px 0;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 /* Image styling */
-.image-section img {
+.left-section img {
   width: 100%;
   max-width: 400px;
   height: auto;
   display: block;
-  margin: 0 auto 20px; /* Bottom margin to separate from music player */
+  margin-bottom: 20px;
 }
 
 /* Music player styling */
@@ -47,22 +48,21 @@ body {
   margin-top: 20px;
 }
 
-/* Paragraph section styling */
+/* Paragraph styling */
 .paragraph {
   margin-top: 20px;
-  text-align: left;
-  width: 100%;
-  max-width: 800px;
+  font-size: 18px;
+  color: #555;
 }
 
-/* Buttons section (vertical on the right) */
-.buttons {
-  position: fixed;
-  right: 20px;
-  top: 20%;
+/* Right section: Button links aligned vertically */
+.right-section {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: column; /* Align buttons vertically */
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px; /* Adds space between buttons */
+  padding-top: 40px; /* Align buttons with paragraph */
 }
 
 .button {
