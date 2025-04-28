@@ -62,7 +62,7 @@ body {
   flex-direction: column; /* Align buttons vertically */
   gap: 20px; /* Adds space between buttons */
   align-items: flex-start; /* Align buttons to the left */
-  padding-top: 60px; /* Align buttons with paragraph */
+  padding-top: 10px; /* Align buttons with paragraph */
   flex-shrink: 0; /* Prevents the right section from shrinking */
 }
 
