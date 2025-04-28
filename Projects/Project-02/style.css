@@ -13,7 +13,7 @@ body {
 }
 
 .center-content {
-  text-align: left;
+  text-align: center;
   padding-top: 100px;
 }
 
@@ -32,6 +32,7 @@ p {
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.6;
+  text-align: left;
 }
 
 /* Image grid with buttons */
