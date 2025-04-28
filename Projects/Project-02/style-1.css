@@ -18,7 +18,7 @@ body {
   max-width: 1200px;
 }
 
-/* Left section: Title, Image, Music Player, Paragraph, and Buttons */
+/* Left section: Title, Image, Music Player, Paragraph */
 .left-section {
   flex: 1;
   margin-right: 20px;
@@ -56,13 +56,17 @@ body {
   margin-bottom: 20px; /* Adds space between the paragraph and the buttons */
 }
 
-/* Button links styling */
-.buttons {
+/* Right section: Button links aligned vertically */
+.right-section {
   display: flex;
   flex-direction: column; /* Align buttons vertically */
   gap: 10px; /* Adds space between buttons */
+  align-items: flex-start; /* Align buttons to the left */
+  padding-top: 40px; /* Align buttons with paragraph */
+  flex-shrink: 0; /* Prevents the right section from shrinking */
 }
 
+/* Button links styling */
 .button {
   background-color: #007bff;
   color: white;
@@ -79,7 +83,3 @@ body {
   background-color: #0056b3;
 }
 
-/* Right section: Empty or additional content */
-.right-section {
-  /* This can be left empty or used for other content */
-}
