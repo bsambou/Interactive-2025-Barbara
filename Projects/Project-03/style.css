@@ -1,0 +1,192 @@
+h1 { 
+  text-align:center; }
+
+h2 { 
+  text-align:center; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/map of sf.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+}
+
+
+p {
+  margin-bottom: 20px; 
+  line-height: 1.6;     
+}
+
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; 
+}
+
+
+
+<<<<<<< HEAD
+=======
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px; /* Large radius for rounded corners */
+  display: block;
+}
+
+
+.image-box img {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.text-box1 {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background, 50% opacity */
+  color: #fff; /* White text for contrast */
+  padding: 16px;
+  border-radius: 8px; /* Optional: rounded corners */
+  max-width: 600px; /* Optional: control box width */
+}
+
+
+
+.text-box2 {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background, 50% opacity */
+  color: #fff; /* White text for contrast */
+  padding: 16px;
+  border-radius: 8px; /* Optional: rounded corners */
+  max-width: 600px; /* Optional: control box width */
+}
+
+.text-box3 {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background, 50% opacity */
+  color: #fff; /* White text for contrast */
+  padding: 16px;
+  border-radius: 8px; /* Optional: rounded corners */
+  max-width: 600px; /* Optional: control box width */
+}
+
+.text-box4 {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background, 50% opacity */
+  color: #fff; /* White text for contrast */
+  padding: 16px;
+  border-radius: 8px; /* Optional: rounded corners */
+  max-width: 600px; /* Optional: control box width */
+}
+
+p {
+  margin-bottom: 20px; 
+  line-height: 1.6;     
+}
+
+
+.cta-button-1 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #FF5A5F;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button-1:hover {
+  background-color: #BC3F4A;
+}
+
+.cta-button-2 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: #DC143C;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button-2:hover {
+  background-color: #C51E3A;
+}
+
+
+.cta-button-3 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #502380;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button-3:hover {
+  background-color: #4B0082;
+}
+
+
+.cta-button-4 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #002369;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button-4:hover {
+  background-color: #000934;
+}
+
+
+
+.cta-button-5 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00263e;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button-5:hover {
+  background-color: #2c2c2c;
+}
+
+
+p {
+  margin-bottom: 20px; 
+  line-height: 1.6;     
+}
+
