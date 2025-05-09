@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8"> 
+	    <title>Breakpoints</title>
+	    <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+<div class="wrapper">
+  <div class="col1">
+    <p>
+       The Undeniable Significance of Writing in Design        
+    </p>
+  </div>
+  <div class="col2">
+    <p>
+Design is often thought of as a visual discipline, focused on creating aesthetically pleasing and functional solutions. While visual elements certainly play a crucial role, the significance of writing in design should not be overlooked. Writing is an integral part of the design process, as it helps shape and communicate ideas, establish brand identity, and engage users or consumers in a meaningful way.   
+    </p>
+    <p>
+One of the primary functions of writing in design is communication. Designers use words to convey messages, describe concepts, and provide instructions. Whether it’s through website copy, packaging labels, or user interface text, well-crafted writing helps users understand the purpose and functionality of a design. Clear and concise writing can guide users through an interface, enhancing their overall experience and preventing confusion. By carefully choosing the right words, designers can create intuitive and user-friendly designs that effectively fulfill their intended objectives.
+      
+    </p>
+  </div>
+</div>
+
+
+	</body>
+</html>

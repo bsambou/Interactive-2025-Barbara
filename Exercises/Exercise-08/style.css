@@ -1,30 +1,31 @@
- <!DOCTYPE html>
-<html lang="en">
-	<head>
-	    <meta charset="UTF-8"> 
-	    <title>Breakpoints</title>
-	    <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+}
 
-	<body>
-<div class="wrapper">
-  <div class="col1">
-    <p>
-       The Undeniable Significance of Writing in Design        
-    </p>
-  </div>
-  <div class="col2">
-    <p>
-Design is often thought of as a visual discipline, focused on creating aesthetically pleasing and functional solutions. While visual elements certainly play a crucial role, the significance of writing in design should not be overlooked. Writing is an integral part of the design process, as it helps shape and communicate ideas, establish brand identity, and engage users or consumers in a meaningful way.   
-    </p>
-    <p>
-One of the primary functions of writing in design is communication. Designers use words to convey messages, describe concepts, and provide instructions. Whether it’s through website copy, packaging labels, or user interface text, well-crafted writing helps users understand the purpose and functionality of a design. Clear and concise writing can guide users through an interface, enhancing their overall experience and preventing confusion. By carefully choosing the right words, designers can create intuitive and user-friendly designs that effectively fulfill their intended objectives.
-      
-    </p>
-  </div>
-</div>
+.responsive-image {
+  width: 100%;
+  height: 100vh; /* Fill full viewport height */
+  background-size: cover;
+  background-position: center;
+}
 
+/* Default image for small (mobile) */
+.responsive-image {
+  background-image: url('https://i.etsystatic.com/36003685/r/il/f11a78/5735657951/il_1588xN.5735657951_llti.jpg'); /* Replace with your mobile image */
+}
 
-	</body>
-</html>
+/* Medium screens (tablet) */
+@media (min-width: 600px) {
+  .responsive-image {
+    background-image: url('https://th.bing.com/th/id/R.c2eecf14ce18e4738984bd14b2c240b1?rik=a5olF65nQAhCLQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-lt1jJFrQmmA%2fUMoGu6MUF0I%2fAAAAAAAAALY%2fS6Tho7e1glA%2fs1600%2fcocoa_0350.jpg&ehk=lDLuJ8RKSBjFp3%2blZdFASXEm%2ff2UU1GnWIqjz4Yonmc%3d&risl=&pid=ImgRaw&r=0'); /* Replace with your tablet image */
+  }
+}
+
+/* Large screens (desktop) */
+@media (min-width: 1024px) {
+  .responsive-image {
+    background-image: url('https://www.nlfoodpartnership.com/media/images/cocoa_man_and_woman.width-1200.jpg'); /* Replace with your desktop image */
+  }
+}
