@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-left-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1300px;  
+  height: auto;
+  margin: 10px;  
+}
