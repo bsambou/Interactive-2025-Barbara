@@ -1,4 +1,3 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,7 @@ body {
 .calendar {
     display: flex;
     flex-direction: column;
-    width: 320px; /* Slightly wider for spacing */
+    width: 320px; 
     border: 2px solid #fff;
     border-radius: 8px;
     background-color: #111;
@@ -81,7 +80,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    min-height: 80px; /* Ensure there’s enough space for moon symbols */
+    min-height: 80px; 
 }
 
 .cell:nth-child(7n) {
@@ -95,11 +94,11 @@ body {
 .cell[data-moon]::before {
     content: attr(data-moon);
     font-size: 28px;
-    margin-top: 8px; /* Space between the date number and moon phase */
+    margin-top: 8px; 
     animation: moonCycle 29.5s infinite;
 }
 
-/* Moon Phases - Represented with Unicode or CSS Symbols */
+
 @keyframes moonCycle {
     0%, 100% {
         content: '🌑'; /* New Moon */
@@ -127,7 +126,7 @@ body {
     }
 }
 
-/* Add a little hover effect for the calendar cells */
+
 .cell:hover {
     background-color: #333;
     cursor: pointer;
